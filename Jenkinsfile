@@ -9,11 +9,23 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    // Docker build commands
                     echo "Building Docker image..."
                 }
             }
         }
         stage('Test') {
             steps {
-    
+                script {
+                    echo "Running tests or other commands..."
+                }
+            }
+        }
+        stage('Post Actions') {
+            steps {
+                script {
+                    echo "Performing post actions..."
+                }
+            }
+        }
+    }
+}
